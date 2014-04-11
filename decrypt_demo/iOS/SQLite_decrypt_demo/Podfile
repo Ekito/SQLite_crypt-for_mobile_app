@@ -1,0 +1,20 @@
+# This is a Podfile, see www.cocoapods.org for details.
+# If you are new to CocoaPod, you might want to check out: http://www.courrier-app.fr/blog/introduction-a-cocoapods/
+#
+# CocoaPods is distributed as a ruby gem
+# To install ruby properly (default version shipped with Mac OS X is borked), you might use rvm (Ruby Version Manager) ; see http://rvm.io
+# If pod 'suddenly' is un-installed, you might need to  rvm use ruby-1.9.2-p290
+#
+
+platform :ios, "7.0"
+
+inhibit_all_warnings! # See pod FMDB/SQLCipher for why we are inhibiting all warnings
+
+
+target "SQLite_decrypt_demo" do
+
+  #    pod 'FMDB'
+  pod 'FMDB/SQLCipher' # , :inhibit_warnings => true # Inhibits warning does not work, see https://github.com/CocoaPods/CocoaPods/issues/1859
+
+end
+

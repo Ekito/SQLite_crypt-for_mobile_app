@@ -1,0 +1,6 @@
+target "sqlite-sqlcipher-crypt" do
+
+  pod 'FMDB/SQLCipher'
+
+end
+

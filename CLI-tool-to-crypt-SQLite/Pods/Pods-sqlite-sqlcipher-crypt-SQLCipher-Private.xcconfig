@@ -1,0 +1,5 @@
+#include "Pods-sqlite-sqlcipher-crypt-SQLCipher.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/SQLCipher" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/SQLCipher"
+OTHER_LDFLAGS = -ObjC ${PODS_SQLITE_SQLCIPHER_CRYPT_SQLCIPHER_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
